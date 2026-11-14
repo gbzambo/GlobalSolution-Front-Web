@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bimo-50: #f0fdf4;
+  --color-bimo-100: #dcfce7;
+  --color-bimo-500: #22c55e;
+  --color-bimo-600: #16a34a;
+  --color-bimo-700: #15803d;
+}
+
+/* No Tailwind v4, aplicamos estilos base globais direto no elemento body */
+body {
+  background-color: var(--color-slate-50, #f8fafc);
+  color: var(--color-slate-800, #1e293b);
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
