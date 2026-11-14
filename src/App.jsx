@@ -43,7 +43,7 @@ export function App() {
         
         <main className="flex-1">
           <Routes>
-            <Route path="/" element={usuario ? <Navigate to="/home" replace /> : <Entrar onEntrar={entrarOuCadastrar} />} />
+            <Route path="/" element={usuario ? <Navigate to="/home" replace /> : <Entrar onEntrar={entrarOuCadastrar} erroAuth={useAuth} />} />
             
             <Route path="/home" element={
               <RotaPrivada usuario={usuario}>

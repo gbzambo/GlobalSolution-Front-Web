@@ -23,7 +23,6 @@ export function useAuth() {
 
   const entrarOuCadastrar = async (nomeLimpo) => {
     try {
-      setCarregando(true);
       setErro(null);
       let user = await usuariosService.buscarPorNome(nomeLimpo);
       if (!user) {
@@ -35,8 +34,6 @@ export function useAuth() {
     } catch (err) {
       setErro(err.message);
       throw err;
-    } finally {
-      setCarregando(false);
     }
   };
 
