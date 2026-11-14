@@ -11,7 +11,7 @@ import { Carregando } from './components/Carregando';
 
 import { Entrar } from './pages/Entrar';
 import { Home } from './pages/Home';
-import { Checkin } from './pages/CheckIn';
+import { Checkin } from './pages/Checkin';
 import { Diario } from './pages/Diario';
 import { Conversa } from './pages/Conversa';
 import { Personalidade } from './pages/Personalidade';
